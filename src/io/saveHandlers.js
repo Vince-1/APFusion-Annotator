@@ -2,7 +2,7 @@ function backendNotReachableMessage(message) {
   return [
     `Backend not reachable: ${message}`,
     "Please start Flask backend on port 5000:",
-    "python /home/wenhao/trains/src/serving/server.py"
+    "python /home/wenhao/trains/web/apfusion/src/serving/server.py"
   ].join("\n");
 }
 
@@ -10,7 +10,7 @@ function backendSaveFailedMessage(message) {
   return [
     `Backend save failed: ${message}`,
     "Please ensure Flask backend is running on port 5000:",
-    "python /home/wenhao/trains/src/serving/server.py"
+    "python /home/wenhao/trains/web/apfusion/src/serving/server.py"
   ].join("\n");
 }
 

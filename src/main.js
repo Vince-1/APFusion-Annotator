@@ -1001,5 +1001,5 @@ import { cloneJson, escapeHtml } from './utils/common.js';
       initDatasetPresetUi,
       renderSortButtons,
       alertImpl: alert,
-      checkBackendHint: "python /home/wenhao/trains/src/serving/server.py",
+      checkBackendHint: "python /home/wenhao/trains/web/apfusion/src/serving/server.py",
     });

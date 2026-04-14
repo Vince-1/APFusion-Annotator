@@ -35,7 +35,7 @@ export function bindUiEvents(deps) {
     initDatasetPresetUi,
     renderSortButtons,
     alertImpl = alert,
-    checkBackendHint = "python /home/wenhao/trains/src/serving/server.py",
+    checkBackendHint = "python /home/wenhao/trains/web/apfusion/src/serving/server.py",
   } = deps;
 
   documentRef.getElementById("btnLoadData").onclick = async () => {
