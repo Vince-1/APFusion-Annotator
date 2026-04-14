@@ -1,0 +1,142 @@
+.topbar {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  background: #f3f6fb;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topbar input {
+  padding: 6px 8px;
+  min-width: 340px;
+}
+
+.topbar select {
+  padding: 6px 8px;
+  min-width: 260px;
+}
+
+.topbar button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 240px 360px 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 10px;
+  height: calc(100vh - 56px);
+  padding: 10px;
+  align-items: stretch;
+}
+
+.layout .patient-panel {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.layout .stats-panel {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.layout .images-panel {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+}
+
+.panel h3 {
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.viewer-body {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 10px;
+}
+
+.row3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  min-height: 0;
+  align-items: start;
+}
+
+.canvas-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: auto;
+  background: #f6f9fc;
+  min-height: 0;
+  height: auto;
+  max-height: 100%;
+}
+
+.canvas-title {
+  font-size: 13px;
+  color: #475569;
+  padding: 6px 10px;
+  border-bottom: 1px solid #d9e1ec;
+  background: #edf3f9;
+}
+
+.canvas-wrap {
+  position: relative;
+  background: #f2f6fb;
+}
+
+.canvas-wrap.invert-off {
+  background: #000;
+}
+
+.canvas-wrap.invert-on {
+  background: #f2f6fb;
+}
+
+.canvas-wrap canvas {
+  display: block;
+}
+
+.report {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: auto;
+  background: #f7fafd;
+  color: var(--text);
+  padding: 12px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.5;
+  min-height: 0;
+  height: 100%;
+  max-height: none;
+  align-self: stretch;
+}
+
+.stats-body {
+  padding: 10px;
+  overflow: auto;
+}

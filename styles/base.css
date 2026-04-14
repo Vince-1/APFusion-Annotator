@@ -1,0 +1,21 @@
+:root {
+  --bg: #eef2f7;
+  --panel: #f8fafc;
+  --line: #d5dce8;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --blue: #1d4ed8;
+  --red: #dc2626;
+  --yellow: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
