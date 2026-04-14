@@ -1,4 +1,4 @@
-# APFusion - Medical Image Pair Annotation Tool
+# APFusion Annotator
 
 A web-based annotation tool for medical image analysis with dual-viewer pair editing and auto-pairing capabilities.
 
