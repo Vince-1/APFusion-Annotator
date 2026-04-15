@@ -45,4 +45,5 @@ Thumbs.db
 
 # Artifacts from development
 apfusion_outputs/
+prediction/
 *.html.bak
