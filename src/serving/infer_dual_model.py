@@ -17,7 +17,7 @@ from __future__ import annotations
         --lbl-dir /home/wenhao/trains/review_datas/1982Single/labels/test \
         --full-model /path/to/full/weights/best.pt \
         --limb-model /path/to/limb/weights/best.pt \
-        --output-dir /home/wenhao/trains/prediction/1982dual \
+    --output-dir /home/wenhao/trains/web/apfusion/prediction/1982dual \
         --device 1 \
 """
 
@@ -439,8 +439,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--report-dir", type=str, default="/home/DataCollection/Project/RadiSmart/metastasis/WB2D/Report")
     p.add_argument("--full-model", type=str, required=True, help="全身模型权重路径")
     p.add_argument("--limb-model", type=str, required=True, help="四肢模型权重路径")
-    p.add_argument("--output-dir", type=str, default="/home/wenhao/trains/prediction/1982dual")
-    p.add_argument("--workspace-root", type=str, default="/home/wenhao/train")
+    p.add_argument("--output-dir", type=str, default="/home/wenhao/trains/web/apfusion/prediction/1982dual")
+    p.add_argument("--workspace-root", type=str, default="/home/wenhao/trains/web/apfusion")
     p.add_argument("--device", type=str, default="0")
     p.add_argument("--full-conf", type=float, default=0.12)
     p.add_argument("--limb-conf", type=float, default=0.18)

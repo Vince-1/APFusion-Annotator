@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuration
-WORKSPACE_ROOT = Path("/home/wenhao/train")
+WORKSPACE_ROOT = Path("/home/wenhao/trains/web/apfusion")
 
 
 def ensure_dir(path):
